@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/primeiroFragmento">
+
+    <fragment
+        android:id="@+id/primeiroFragmento"
+        tools:layout="@layout/fragmento_primeiro"
+        android:name="com.example.navegacao.PrimeiroFragmento"
+        android:label="PrimeiroFragmento" >
+        <action
+            android:id="@+id/primeiroParaSegundo"
+            app:destination="@id/segundoFragmento" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundoFragmento"
+        android:name="com.example.navegacao.SegundoFragmento"
+        android:label="fragmento_segundo"
+        tools:layout="@layout/fragmento_segundo" >
+        <action
+            android:id="@+id/segundoParaTerceiro"
+            app:destination="@id/terceiroFrangmento" />
+        <argument
+            android:name="nome"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/terceiroFrangmento"
+        android:name="com.example.navegacao.TerceiroFrangmento"
+        android:label="fragmento_terceiro"
+        tools:layout="@layout/fragmento_terceiro" >
+        <action
+            android:id="@+id/terceiroParaQuarto"
+            app:destination="@id/quartoFragmento" />
+    </fragment>
+    <fragment
+        android:id="@+id/quartoFragmento"
+        android:name="com.example.navegacao.QuartoFragmento"
+        android:label="fragmento_quarto"
+        tools:layout="@layout/fragmento_quarto" >
+        <action
+            android:id="@+id/quartoParaQuinto"
+            app:destination="@id/quintoFragmento" />
+    </fragment>
+    <fragment
+        android:id="@+id/quintoFragmento"
+        android:name="com.example.navegacao.QuintoFragmento"
+        android:label="fragmento_quinto"
+        tools:layout="@layout/fragmento_quinto" >
+        <action
+            android:id="@+id/quintoParaPrimeiro"
+            app:destination="@id/primeiroFragmento" />
+    </fragment>
+</navigation>
