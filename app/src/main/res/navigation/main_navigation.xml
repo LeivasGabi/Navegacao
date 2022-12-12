@@ -33,24 +33,7 @@
         tools:layout="@layout/fragmento_terceiro" >
         <action
             android:id="@+id/terceiroParaQuarto"
-            app:destination="@id/quartoFragmento" />
-    </fragment>
-    <fragment
-        android:id="@+id/quartoFragmento"
-        android:name="com.example.navegacao.QuartoFragmento"
-        android:label="fragmento_quarto"
-        tools:layout="@layout/fragmento_quarto" >
-        <action
-            android:id="@+id/quartoParaQuinto"
-            app:destination="@id/quintoFragmento" />
-    </fragment>
-    <fragment
-        android:id="@+id/quintoFragmento"
-        android:name="com.example.navegacao.QuintoFragmento"
-        android:label="fragmento_quinto"
-        tools:layout="@layout/fragmento_quinto" >
-        <action
-            android:id="@+id/quintoParaPrimeiro"
             app:destination="@id/primeiroFragmento" />
     </fragment>
+
 </navigation>
