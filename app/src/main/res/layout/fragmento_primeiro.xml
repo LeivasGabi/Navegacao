@@ -9,14 +9,14 @@
     <Button
         android:id="@+id/primeiro"
         android:layout_width="213dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="37dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="61dp"
         android:backgroundTint="@color/purple_700"
         android:text="Proximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nascimento"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.932" />
 
     <EditText
@@ -63,13 +63,19 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="350dp"
-        android:layout_height="53dp"
-        android:text="Cadastro - Academia Vida e Saude"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="529dp"
+        android:text="Cadastro"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="26dp" />
+        app:layout_constraintBottom_toTopOf="@+id/primeiro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
