@@ -13,17 +13,12 @@ class PrimeiroFragmento : Fragment(R.layout.fragmento_primeiro) {
         super.onViewCreated(view, savedInstanceState)
 
         val nome = view.findViewById<EditText>(R.id.nome)
-        val email = view.findViewById<EditText>(R.id.email)
-        val nascimento = view.findViewById<EditText>(R.id.nascimento)
 
-        view.findViewById<Button>(R.id.primeiro).setOnClickListener {
-
-//            val action = PrimeiroFragmentoDirections
+        view.findViewById<Button>(R.id.primeiro).setOnClickListener{
+            val action = PrimeiroFragmentoDirections.actionFirstToSecond(
+                "${nome.text}"
+            )
+            findNavController().navigate(action)
         }
     }
 }
-//"${nome.text}",
-//"${email.text}",
-//"${nascimento.text}"
-
-//findNavController().navigate(action)

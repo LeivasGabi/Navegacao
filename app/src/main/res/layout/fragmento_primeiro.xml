@@ -8,74 +8,38 @@
 
     <Button
         android:id="@+id/primeiro"
-        android:layout_width="213dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="61dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/purple_700"
         android:text="Proximo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.932" />
+        app:layout_constraintTop_toBottomOf="@+id/nome"/>
 
     <EditText
         android:id="@+id/nome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="97dp"
-        android:layout_marginBottom="47dp"
         android:ems="10"
         android:hint="Nome"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintEnd_toEndOf="@+id/email"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="57dp"
-        android:ems="10"
-        android:hint="E-mail"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/nascimento"
-        app:layout_constraintEnd_toEndOf="@+id/nascimento"
-        app:layout_constraintStart_toStartOf="@+id/nascimento"
-        app:layout_constraintTop_toBottomOf="@+id/nome" />
-
-    <EditText
-        android:id="@+id/nascimento"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="176dp"
-        android:ems="10"
-        android:hint="Nascimento"
-        android:inputType="date"
         app:layout_constraintBottom_toTopOf="@+id/primeiro"
-        app:layout_constraintEnd_toEndOf="@+id/primeiro"
-        app:layout_constraintStart_toStartOf="@+id/primeiro"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="529dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Cadastro"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/primeiro"
+        app:layout_constraintBottom_toTopOf="@+id/nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

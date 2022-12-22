@@ -11,7 +11,7 @@
         android:name="com.example.navegacao.PrimeiroFragmento"
         android:label="PrimeiroFragmento" >
         <action
-            android:id="@+id/primeiroParaSegundo"
+            android:id="@+id/actionFirstToSecond"
             app:destination="@id/segundoFragmento" />
     </fragment>
     <fragment
@@ -19,21 +19,23 @@
         android:name="com.example.navegacao.SegundoFragmento"
         android:label="fragmento_segundo"
         tools:layout="@layout/fragmento_segundo" >
-        <action
-            android:id="@+id/segundoParaTerceiro"
-            app:destination="@id/terceiroFrangmento" />
         <argument
             android:name="nome"
-            app:argType="string" />
+            app:argType="string"/>
+        <action
+            android:id="@+id/actionSecondToThrird"
+            app:destination="@id/terceiroFrangmento" />
     </fragment>
     <fragment
         android:id="@+id/terceiroFrangmento"
         android:name="com.example.navegacao.TerceiroFrangmento"
         android:label="fragmento_terceiro"
         tools:layout="@layout/fragmento_terceiro" >
+        <argument
+            android:name="email"
+            app:argType="string"/>
         <action
-            android:id="@+id/terceiroParaQuarto"
+            android:id="@+id/actionThrirdToFirst"
             app:destination="@id/primeiroFragmento" />
     </fragment>
-
 </navigation>
